@@ -34,11 +34,15 @@ public class AccountTest {
 
 	@Test
 	public void testAddWithdraw() {
-		fail("Write test case here");
+		int before = testAccount.getBalance().getAmount();
+		testAccount.withdraw(new Money(10000, SEK));
+		assertEquals(before-10000, testAccount.getBalance().getAmount().intValue());
 	}
 	
 	@Test
 	public void testGetBalance() {
-		fail("Write test case here");
+		int before = testAccount.getBalance().getAmount();
+		testAccount.withdraw(new Money(10000, SEK));
+		assertEquals(before-10000, testAccount.getBalance().getAmount().intValue());
 	}
 }

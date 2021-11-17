@@ -7,28 +7,15 @@ public class Bank {
 	private String name;
 	private Currency currency;
 	
-	/**
-	 * New Bank
-	 * @param name Name of this bank
-	 * @param currency Base currency of this bank (If this is a Swedish bank, this might be a currency class representing SEK)
-	 */
 	Bank(String name, Currency currency) {
 		this.name = name;
 		this.currency = currency;
 	}
 	
-	/**
-	 * Get the name of this bank
-	 * @return Name of this bank
-	 */
 	public String getName() {
 		return name;
 	}
-	
-	/**
-	 * Get the Currency of this bank
-	 * @return The Currency of this bank
-	 */
+
 	public Currency getCurrency() {
 		return currency;
 	}
