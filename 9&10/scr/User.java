@@ -1,0 +1,3 @@
+class User implements Person{
+    
+}
